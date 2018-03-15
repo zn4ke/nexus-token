@@ -1,7 +1,7 @@
 {
   "name": "nexus-token",
   "description": "CLI tool to fetch npm login token from nexus 3",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "bin": "dist/nexus-token.js",
   "scripts": {
     "build": "npm run clean && npm run transpile && chmod u+x dist/nexus-token.js",
