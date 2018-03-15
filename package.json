@@ -1,0 +1,40 @@
+{
+  "name": "nexus-token",
+  "description": "CLI tool to fetch npm login token from nexus 3",
+  "version": "0.0.7",
+  "bin": "dist/nexus-token.js",
+  "scripts": {
+    "build": "npm run clean && npm run transpile && chmod u+x dist/nexus-token.js",
+    "transpile": "node_modules/.bin/babel src/index.js -o dist/nexus-token.js",
+    "prepublishOnly": "npm run build",
+    "start": "node_modules/.bin/babel-node src/index.js",
+    "clean": "node_modules/.bin/rimraf dist && mkdir dist ",
+    "test": "echo 'no tests specified'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zn4ke/nexus-login.git"
+  },
+  "keywords": [
+    "nexus",
+    "npm",
+    "npmjs",
+    "registry",
+    "auth",
+    "token"
+  ],
+  "author": "Niklaus Baumann <niklaus.baumann@itds.ch>",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "common-tags": "^1.7.2",
+    "inquirer": "3.2.2"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-node8": "^1.2.0",
+    "rimraf": "^2.6.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}

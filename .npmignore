@@ -1,0 +1,10 @@
+node_modules
+.DS_Store
+.editorconfig
+.eslintrc.js
+.gitattributes
+.gitignore
+.npmrc
+circle.yml
+gitlab-ci.yml
+npm-debug.log
